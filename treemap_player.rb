@@ -1,4 +1,3 @@
-# Chapter7
 require "library/treemap"
 require "library/BoundsIntegrator"
 
@@ -12,7 +11,7 @@ $zoom_item     = nil
 $mod_times     = []
 $zoom_bounds   = nil
 
-class Chapter7 < Processing::App
+class TreemapPlayer < Processing::App
   include_package "treemap"
 
   def setup
@@ -345,11 +344,4 @@ class Chapter7 < Processing::App
   end
 end
 
-def p_once(s)
-  unless $p_called then
-    $p_called = true
-    p s
-  end
-end
-
-Chapter7.new :title => "Chapter7"
+TreemapPlayer.new :title => "Treemap Player"

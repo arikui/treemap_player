@@ -1,0 +1,25 @@
+= treemap_player
+
+Treemap UI music player.
+
+== Requirements
+
+* Windows
+* iTunes
+* Ruby-Processing http://github.com/jashkenas/ruby-processing/tree/master
+
+== Preprcessing/Run
+
+結構めんどい
+
+* create artist_data.json and artworks
+	$ cscript create_data.js > data/artist_data.json
+* change playlist name in js scripts: play_itunes.js, get_tracks.js, create_data.js
+	var PLAYLIST_NAME = " "; // set your playlist name
+* run sketch
+	$ rp5 run treemap_player.rb
+
+== Reference
+
+* ビジュアライジングデータ http://oreilly.com/catalog/9780596514556/
+* Ben Fry さん http://benfry.com/writing/archives/3
