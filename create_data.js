@@ -13,6 +13,10 @@ var $scriptDir = (function(){
 	return path.join("\\");
 })();
 
+if(!File.FolderExists($scriptDir + "\\data\\artwork")){
+	File.CreateFolder($scriptDir + "\\data\\artwork");
+}
+
 var artists = {};
 
 var Artist = function(name){
