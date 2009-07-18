@@ -76,10 +76,10 @@ for(i = 1, l = tracks.Count; i <= l; ++i){
 			// save
 			if(!File.FileExists(savePath)){
 				try{
-				artwork.SaveArtworkToFile(savePath);
+					artwork.SaveArtworkToFile(savePath);
 				}
 				catch(e){
-					WSH.Echo(savePath);
+					//WSH.Echo(savePath);
 				}
 			}
 
